@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PortSlot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cover bg-center min-h-screen"
+      style="background-image: url('{{ url_for('static', filename='port.jpg') }}');">
+
+
+<!-- Navbar -->
+<nav class="bg-blue-900 text-white px-6 py-4 flex justify-between">
+    <h1 class="text-2xl font-bold">🚢 PortSlot</h1>
+    <div class="space-x-4">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/login" class="hover:underline">Login</a>
+        <a href="/register" class="hover:underline">Register</a>
+        <a href="/booking" class="hover:underline">Book Slot</a>
+        <a href="/admin" class="hover:underline">Dashboard</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+
+<div class="text-center py-20 bg-black/60 text-white">
+    <h2 class="text-5xl font-bold mb-6">Book Your Container Slot in Seconds</h2>
+    <p class="text-lg mb-8">Avoid long queues at the terminal yard and schedule truck entry easily.</p>
+    <a href="/booking" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">
+        Book a Slot
+    </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-10 rounded-xl shadow-xl text-center w-[450px]">
+
+    <h2 class="text-3xl font-bold text-green-600 mb-4">
+        Booking Confirmed ✅
+    </h2>
+
+    <p class="mb-2"><b>Driver:</b> {{ name }}</p>
+    <p class="mb-2"><b>Truck:</b> {{ truck }}</p>
+    <p class="mb-2"><b>Container:</b> {{ ctype }}</p>
+    <p class="mb-2"><b>Date:</b> {{ date }}</p>
+    <p class="mb-6"><b>Time Slot:</b> {{ time }}</p>
+
+    <a href="/" class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800">
+        Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>

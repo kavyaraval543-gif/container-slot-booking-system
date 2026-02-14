@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Slot - PortSlot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 text-white px-6 py-4 flex justify-between">
+    <h1 class="text-2xl font-bold">🚢 PortSlot</h1>
+    <div class="space-x-4">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/admin" class="hover:underline">Dashboard</a>
+        <a href="/logout" class="hover:underline">Logout</a>
+    </div>
+</nav>
+
+<div class="flex justify-center items-center py-16">
+
+<div class="bg-white p-10 rounded-xl shadow-lg w-[450px]">
+
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-6">Container Slot Booking</h2>
+
+    <form method="POST" action="/booking">
+
+        <label class="block mb-2 font-semibold">Driver Name</label>
+        <input type="text" name="name"
+               class="w-full border border-gray-300 p-2 rounded mb-4 focus:ring-2 focus:ring-blue-500"
+               required>
+
+        <label class="block mb-2 font-semibold">Truck Number</label>
+        <input type="text" name="truck"
+               class="w-full border border-gray-300 p-2 rounded mb-4 focus:ring-2 focus:ring-blue-500"
+               required>
+
+        <label class="block mb-2 font-semibold">Container Type</label>
+        <select name="type"
+                class="w-full border border-gray-300 p-2 rounded mb-4">
+            <option>20 ft</option>
+            <option>40 ft</option>
+        </select>
+
+        <label class="block mb-2 font-semibold">Date</label>
+        <input type="date" name="date"
+               class="w-full border border-gray-300 p-2 rounded mb-4"
+               required>
+
+        <label class="block mb-2 font-semibold">Time Slot</label>
+        <input type="time" name="time"
+               class="w-full border border-gray-300 p-2 rounded mb-6"
+               required>
+
+        <button type="submit"
+                class="w-full bg-yellow-400 text-black py-2 rounded-lg font-semibold hover:bg-yellow-300">
+            Confirm Booking
+        </button>
+
+    </form>
+
+</div>
+</div>
+
+</body>
+</html>

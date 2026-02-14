@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - PortSlot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 text-white px-6 py-4 flex justify-between">
+    <h1 class="text-2xl font-bold">🚢 PortSlot Admin</h1>
+    <div class="space-x-4">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/booking" class="hover:underline">Book Slot</a>
+        <a href="/logout" class="hover:underline">Logout</a>
+    </div>
+</nav>
+
+<div class="p-10">
+
+    <h2 class="text-3xl font-bold text-blue-900 mb-6">Yard Booking Schedule</h2>
+
+    <div class="overflow-x-auto bg-white shadow-lg rounded-xl">
+
+        <table class="min-w-full text-sm text-left">
+
+            <thead class="bg-blue-900 text-white">
+                <tr>
+                    <th class="px-6 py-3">ID</th>
+                    <th class="px-6 py-3">Driver</th>
+                    <th class="px-6 py-3">Truck</th>
+                    <th class="px-6 py-3">Container</th>
+                    <th class="px-6 py-3">Date</th>
+                    <th class="px-6 py-3">Time</th>
+                </tr>
+            </thead>
+
+            <tbody class="divide-y">
+
+            {% for booking in bookings %}
+                <tr class="hover:bg-gray-100">
+                    <td class="px-6 py-3">{{ booking[0] }}</td>
+                    <td class="px-6 py-3">{{ booking[1] }}</td>
+                    <td class="px-6 py-3">{{ booking[2] }}</td>
+                    <td class="px-6 py-3">{{ booking[3] }}</td>
+                    <td class="px-6 py-3">{{ booking[4] }}</td>
+                    <td class="px-6 py-3">{{ booking[5] }}</td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
