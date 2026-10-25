@@ -20,8 +20,7 @@ Transport operators register, log in and book an hourly slot for a truck. Each h
 - A confirmation page after a successful booking.
 - An admin page, shown only to the user named `admin`, listing all bookings.
 
-It does **not** include QR passes, gate verification, hardware control, billing or notifications. Related: [YardFlow](https://github.com/kavyaraval543-gif/yardflow) is a separate case study on yard entry and gate verification.
-
+It does **not** include QR passes, gate verification, hardware control, billing or notifications.
 ## Tech stack
 
 Python, Flask, SQLite, and Tailwind CSS (loaded from the Tailwind CDN).
